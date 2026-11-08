@@ -23,11 +23,8 @@ classDiagram
         +hasNext() boolean
         +next() String
     }
-    class PlaylistTest
 
     Iterable~String~ <|.. Playlist
     Iterator~String~ <|.. PlaylistIterator
     Playlist ..> PlaylistIterator : cria
-    PlaylistTest ..> Playlist : utiliza
-    PlaylistTest ..> Iterator~String~ : percorre
 ```
